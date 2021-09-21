@@ -1,4 +1,4 @@
-# dotfiles
+# Dotfiles
 
 ### Setup detailes  
 ▪ **Distro** ➙ Arch  
