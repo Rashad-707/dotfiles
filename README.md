@@ -1,7 +1,7 @@
 # dotfiles
 
 ### Setup detailes  
-**Distro**  Arch  
+ **Distro** Arch  
 **Window Manager** DWM  
 **Desktop environment** KDE  
 **Terminal** Alacritty  
