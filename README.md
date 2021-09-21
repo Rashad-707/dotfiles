@@ -1,9 +1,7 @@
 # Dotfiles
 
 ### Setup detailes  
-▪ **Distro** ➙ Arch  
 ▪ **Window Manager** ➙ DWM  
-▪ **Desktop environment** ➙ KDE  
 ▪ **Terminal** ➙ Alacritty  
 ▪ **Compositor** ➙ Picom  
 ▪ **File manager** ➙ Dolphin  
