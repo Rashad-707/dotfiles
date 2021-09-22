@@ -1,0 +1,2 @@
+#/usr/bin/env sh
+echo $(uptime -p | sed -e 's/up //;s/ hours,/h/;s/ minutes/m/')
