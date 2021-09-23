@@ -1,0 +1,2 @@
+#/usr/bin/env sh
+ddcutil getvcp 10 --display 1 | awk -F, '{ print $1 }' | awk 'NF>1{print $NF}'  
