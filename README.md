@@ -1,4 +1,5 @@
-# Dotfiles
+# Dotfiles  
+![img](https://raw.githubusercontent.com/Rashad-707/dotfiles/main/img/usr.PNG?token=AOSQ4EZ2CGTKFIPFP7SGCXTBJ5EOU) Dotfiles
 ![color](https://raw.githubusercontent.com/Rashad-707/dotfiles/main/img/colorscheme.png?token=AOSQ4E3GVAB3S77WEYGROW3BJ5EBQ)
 ### Setup detailes  
 ▪ **Window Manager** ➙ DWM  
