@@ -1,5 +1,5 @@
 # Dotfiles
-![color](https://raw.githubusercontent.com/Rashad-707/dotfiles/main/img/colorscheme.png?token=AOSQ4EZKJ6IHOJ5IUZ2JZFLBJ4Y4S)
+![color](https://raw.githubusercontent.com/Rashad-707/dotfiles/main/img/Untitled.png?token=AOSQ4E2YZSCQPNNHSHCU273BJ42HS)
 ### Setup detailes  
 ▪ **Window Manager** ➙ DWM  
 ▪ **Terminal** ➙ Alacritty  
