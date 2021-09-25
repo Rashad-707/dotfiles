@@ -1,5 +1,5 @@
 # Dotfiles  
-![img](https://raw.githubusercontent.com/Rashad-707/dotfiles/main/img/dotfiles.PNG?token=AOSQ4E4QPSAAUMARSAZFA5LBJ5GDQ)
+![img](https://raw.githubusercontent.com/Rashad-707/dotfiles/main/img/dotfiles.png?token=AOSQ4E4GJ6NZFF5PIPUCXA3BJ5IQE)
 ### Setup detailes  
 ▪ **Window Manager** ➙ DWM  
 ▪ **Terminal** ➙ Alacritty  
