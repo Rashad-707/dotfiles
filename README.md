@@ -25,7 +25,7 @@ This is my setup as I'm using arch linux with kde & dwm, this is optional and yo
   
 ### Installing dwm 
 1. Download & extract dwm from [suckless website](https://dwm.suckless.org) 
-2. Download these patches and put them in the same directory  
+2. Download these patches and put them in the same directory
 - [Full gaps](https://dwm.suckless.org/patches/fullgaps/)    
 - [Autostart](https://dwm.suckless.org/patches/autostart/)    
 - [IPC](https://dwm.suckless.org/patches/ipc/)    
