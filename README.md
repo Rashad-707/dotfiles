@@ -13,7 +13,7 @@
 
 This is my setup as I'm using arch linux with kde plasma & dwm, this is optional and you can use any distro/wm out there, but these are the steps that you have to follow if you want to replicate my setup.
 
-###Installing plasma first  
+### Installing plasma first  
 `sudo pacman -S plasma-desktop`  
   
 ### Installing dwm 
@@ -22,7 +22,7 @@ Download the patches into the same folder as dwm package
 [Full gaps](https://dwm.suckless.org/patches/fullgaps/)    
 [Autostart](https://dwm.suckless.org/patches/autostart/)    
 [IPC](https://dwm.suckless.org/patches/ipc/)    
-Apply the patches from the terminal by cd into dwm directory, the run the followin command on each patch, leaving ipc to the end.
+Apply the patches from the terminal by cd into dwm directory, the run the followin command on each patch, leaving ipc to the end.  
 `patch -p1 < patch-name.diff`  
   
 ### Configure plasma to run dwm as wm  
