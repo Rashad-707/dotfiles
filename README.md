@@ -12,9 +12,9 @@
 ▪ **Music player** ➙ Ncmpcpp  
 
 ## Installation
-This is my setup as I'm using arch linux with kde plasma & dwm, this is optional and you can use any distro/wm out there, but these are the steps that you have to follow if you want to replicate my setup.
+This is my setup as I'm using arch linux with kde & dwm, this is optional and you can use any distro/wm out there, but these are the steps that you have to follow if you want to replicate my setup.
 
-### Seting up Plasma KDE   
+### Seting up KDE   
 1. Installing plasma and other few packages  
 `sudo pacman -S plasma-desktop sdddm xorg networkmanager alacritty dolphin`
 2. Enabling services  
@@ -32,7 +32,7 @@ This is my setup as I'm using arch linux with kde plasma & dwm, this is optional
 3. Apply the patches by `cd` into the directory, the run the following command on each patch, leaving ipc to the end.  
 `patch -p1 < patch-name.diff`  
   
-### Configure plasma to run with dwm  
+### Configure KDE to run with dwm  
 Following the steps from [here](https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma), using system wide configurations: 
 `cd /usr/share/xsessions`  
 `sudo cp plasma.desktop plasma-dwm.desktop`  
