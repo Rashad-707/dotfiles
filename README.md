@@ -33,7 +33,7 @@ This is my setup as I'm using arch linux with kde & dwm, this is optional and yo
 `patch -p1 < patch-name.diff`  
   
 ### Configure KDE to run with dwm  
-Following the steps from [here](https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma), using system wide configurations: 
+Following the steps from [here](https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma), using system wide configurations:   
 `cd /usr/share/xsessions`  
 `sudo cp plasma.desktop plasma-dwm.desktop`  
 `vim plasma-dwm.desktop`, modify the file to be like that:  
