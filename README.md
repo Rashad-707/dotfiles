@@ -11,11 +11,18 @@
 ▪ **Editor** ➙ Visual studio code  
 ▪ **Music player** ➙ Ncmpcpp  
 
-## Setup instruction
+## Installation
 This is my setup as I'm using arch linux with kde plasma & dwm, this is optional and you can use any distro/wm out there, but these are the steps that you have to follow if you want to replicate my setup.
 
-### Installing plasma first  
-`sudo pacman -S plasma-desktop`  
+### Installing plasma and few other packages  
+`sudo pacman -S plasma-desktop sdddm xorg networkmanager alacritty dolphin`
+
+enabling services
+`sudo systemctl enable sddm`  
+`sudo systemctl start sddm`  
+`sudo systemctl enable NetworkManager`  
+`sudo systemctl start NetworkManager`  
+
   
 ### Installing dwm 
 Download dwm package from [suckless website](https://dwm.suckless.org), extract it in home directory, (or any other dir).  
