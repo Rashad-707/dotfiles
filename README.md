@@ -45,6 +45,9 @@ TryExec=/usr/bin/startplasma-x11
 DesktopNames=KDE
 Name=Plasma (dwm)
 ```  
+Now you have a new entity in you login screen with the name `Plasma (dwm)` after you login into it, kde desktop will start inside dwm, to solve this issue follow these steps:
+1.  There is a file named `killpshell` in `.bin` in the dotfile, copy it into your `$HOME/.bin`.
+2.  Open kde system settings > autostart > add > add login script > select the file `killpshell`.
 
 
 
