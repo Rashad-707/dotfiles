@@ -32,8 +32,8 @@ This is my setup as I'm using arch linux with kde plasma & dwm, this is optional
 3. Apply the patches by `cd` into the directory, the run the following command on each patch, leaving ipc to the end.  
 `patch -p1 < patch-name.diff`  
   
-### Configure plasma to run dwm as wm  
-Following the steps from [here](https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma) using system wide configurations  
+### Configure plasma to run with dwm  
+Following the steps from [here](https://userbase.kde.org/Tutorials/Using_Other_Window_Managers_with_Plasma), using system wide configurations: 
 `cd /usr/share/xsessions`  
 `sudo cp plasma.desktop plasma-dwm.desktop`  
 `vim plasma-dwm.desktop`, modify the file to be like that:  
