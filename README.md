@@ -24,7 +24,7 @@ This is my setup as I'm using arch linux with kde & dwm, this is optional and yo
 `sudo systemctl start NetworkManager`  
   
 ### Installing dwm 
-1. Download & extract dwm from [suckless website](https://dwm.suckless.org) 
+1. Download dwm from [suckless website](https://dwm.suckless.org) & extract it 
 2. Download these patches and put them in the same directory
 - [Full gaps](https://dwm.suckless.org/patches/fullgaps/)    
 - [Autostart](https://dwm.suckless.org/patches/autostart/)    
