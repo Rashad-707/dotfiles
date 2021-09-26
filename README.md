@@ -15,7 +15,7 @@
 This is my setup as I'm using arch linux with kde plasma & dwm, this is optional and you can use any distro/wm out there, but these are the steps that you have to follow if you want to replicate my setup.
 
 ### Seting up Plasma KDE   
-1. Installing plasma and few other packages  
+1. Installing plasma and other few packages  
 `sudo pacman -S plasma-desktop sdddm xorg networkmanager alacritty dolphin`
 2. Enabling services  
 `sudo systemctl enable sddm`  
@@ -24,12 +24,12 @@ This is my setup as I'm using arch linux with kde plasma & dwm, this is optional
 `sudo systemctl start NetworkManager`  
   
 ### Installing dwm 
-Download dwm package from [suckless website](https://dwm.suckless.org), extract it in home directory, (or any other dir).  
-Download the patches into the same directory where you extract dwm package  
-[Full gaps](https://dwm.suckless.org/patches/fullgaps/)    
-[Autostart](https://dwm.suckless.org/patches/autostart/)    
-[IPC](https://dwm.suckless.org/patches/ipc/)    
-Apply the patches from the terminal by cd into dwm directory, the run the followin command on each patch, leaving ipc to the end.  
+1. Download & extract dwm from [suckless website](https://dwm.suckless.org) 
+2. Download the patches and put them in the same directory
+  - [Full gaps](https://dwm.suckless.org/patches/fullgaps/)    
+  - [Autostart](https://dwm.suckless.org/patches/autostart/)    
+  - [IPC](https://dwm.suckless.org/patches/ipc/)    
+3. Apply the patches by `cd` into the directory, the run the following command on each patch, leaving ipc to the end.  
 `patch -p1 < patch-name.diff`  
   
 ### Configure plasma to run dwm as wm  
