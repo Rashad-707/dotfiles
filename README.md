@@ -1,4 +1,4 @@
-![img](https://raw.githubusercontent.com/Rashad-707/dotfiles/main/img/dotfiles.png?token=AOSQ4E7IYCEOWCTQW4YCSFTBJ5JXA)
+![img](https://github.com/Rashad-707/dotfiles/blob/main/img/dotfiles.png)
 ### Setup detailes  
 ▪ **Window Manager** ➙ DWM  
 ▪ **Terminal** ➙ Alacritty  
