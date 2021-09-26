@@ -46,26 +46,14 @@ DesktopNames=KDE
 Name=Plasma (dwm)
 ```  
 Now you have a new entity in you login screen with the name `Plasma (dwm)` after you login into it, kde desktop will start inside dwm, to solve this issue follow these steps:
-1.  There is a file named `killpshell` in `.bin` in the dotfile, copy it into your `$HOME/.bin`.
+1.  There is a file named `killpshell` in `.bin` directory, copy it into your `$HOME/.bin`.
 2.  Open kde system settings > autostart > add > add login script > select the file `killpshell`.
 
+### Install the remaining packages  
+`yay -S cava dunst feh kvantum-qt5 mpc mpd ncmpcpp picom-ibhagwan-git polybar-dwm-module rofi sxhkd zsh`
 
 
-alacritty
-cava
-dolphin
-dunst
-feh
-kvantum-qt5
-mpc
-mpd
-ncmpcpp
-picom-ibhagwan-git
-polybar-dwm-module
-rofi
-sxhkd
-visual-studio-code-bin
-vivaldi
-zsh
+
+
 
 
