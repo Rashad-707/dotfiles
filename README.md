@@ -11,6 +11,7 @@
 ▪ **Editor** ➙ Visual studio code  
 ▪ **Music player** ➙ Ncmpcpp  
 
+## Setup instruction
 This is my setup as I'm using arch linux with kde plasma & dwm, this is optional and you can use any distro/wm out there, but these are the steps that you have to follow if you want to replicate my setup.
 
 ### Installing plasma first  
