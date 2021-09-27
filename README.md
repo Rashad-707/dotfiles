@@ -6,7 +6,8 @@
 ▪ **File manager** ➙ Dolphin  
 ▪ **Browser** ➙ Vivaldi  
 ▪ **Notification daemon** ➙ Dunst  
-▪ **Widgets & Bar** ➙ Eww  
+▪ **Widgets** ➙ Eww  
+▪ **Bar** ➙ Polybar-dwm-module  
 ▪ **Menu** ➙ Rofi  
 ▪ **Editor** ➙ Visual studio code  
 ▪ **Music player** ➙ Ncmpcpp  
