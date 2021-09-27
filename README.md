@@ -7,7 +7,7 @@
 ▪ **Browser** ➙ Vivaldi  
 ▪ **Notification daemon** ➙ Dunst  
 ▪ **Widgets** ➙ Eww  
-▪ **Bar** ➙ Polybar-dwm-module  
+▪ **Bar** ➙ Polybar 
 ▪ **Menu** ➙ Rofi  
 ▪ **Editor** ➙ Visual studio code  
 ▪ **Music player** ➙ Ncmpcpp  
