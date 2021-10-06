@@ -1,0 +1,523 @@
+(include "structure/variables")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;          USER WIDGET         ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget userWidget []
+    (box        :class "user"
+                :orientation "v"
+                :space-evenly false
+                :spacing "30"
+                :halign "center"
+                :valign "center"
+
+                (image  :path "${imgUser}"
+                        :width "250"
+                        :height "250")
+                
+                (label  :class "pink"
+                        :text "u/Rashad"
+                        :halign "center"
+                        :valign "center")
+                )
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;          POWER WIDGET        ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget powerWidget []
+    (box        :class "power" 
+                :orientation "v"
+        
+        (button :class "pink"
+                :onclick "poweroff" "")
+
+        (button :class "blue"
+                :onclick "reboot" "")
+
+        (button :class "purple"
+                :onclick "/home/rashad/.bin/logout" "")
+
+        (button :class "yellow"
+                :onclick "/home/rashad/.bin/lock" "")
+    )
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;         DATE WIDGET          ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget dateWidget []
+        (box    :orientation "v"
+                :space-evenly "false"
+                :valign "center"
+                :halign "center"
+                :spacing "15"
+
+                (box :orientation "h"
+                        :class "date"
+                        :space-evenly "false"
+                        :spacing "35"
+                        (label  :class "blue"
+                                :text "${hour}")
+
+                        (label  :class "separator pink"
+                                :text "❣")
+                                
+                        (label  :class "yellow"
+                                :text "${minute}")
+                )
+                (label  :class "day purple"
+                        :text "${date}")
+                        
+        )       
+)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;         CALENDAR WIDGET          ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget calendarWidget []
+(box    :class "calendar-border"
+        :orientation "v"
+        :space-evenly "false"
+        :spacing "5"
+        :valign "center"
+        :halign "center"
+
+        (calendar :class "calendar")
+)
+)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;         TODO WIDGET          ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget todoWidget []
+        (box    :orientation "v"
+                :space-evenly "false" 
+
+                (label :text "To do list"
+                        :class "todo-header pink")
+               
+                (box    :orientation "h"
+                        :halign "start"
+                        :space-evenly "false"
+                        
+                        (button :class "todo-check yellow"
+                                :onclick "/home/rashad/.config/eww/structure/scripts/isChecked 1" "${checkbox1}"
+                        )
+                        (input  :class "cyan todo"
+                                :value "${line1}"
+                                :onchange "sed -i '1s/.*/{}/' /home/rashad/.config/eww/structure/scripts/todo"
+                                :timeout "5s"
+                        )
+                )
+
+                (box    :orientation "h"
+                        :halign "start"
+                        :space-evenly "false"
+                        
+                        (button :class "todo-check yellow"
+                                :onclick "/home/rashad/.config/eww/structure/scripts/isChecked 2" "${checkbox2}"
+                        )
+                        (input  :class "cyan todo"
+                                :value "${line2}"
+                                :onchange "sed -i '3s/.*/{}/' /home/rashad/.config/eww/structure/scripts/todo"
+                                :timeout "5s"
+                        )
+                )
+
+                (box    :orientation "h"
+                        :halign "start"
+                        :space-evenly "false"
+                        
+                        (button :class "todo-check yellow"
+                                :onclick "/home/rashad/.config/eww/structure/scripts/isChecked 3" "${checkbox3}"
+                        )
+                        (input  :class "cyan todo"
+                                :value "${line3}"
+                                :onchange "sed -i '5s/.*/{}/' /home/rashad/.config/eww/structure/scripts/todo"
+                                :timeout "5s"
+                        )
+                )
+
+                (box    :orientation "h"
+                        :halign "start"
+                        :space-evenly "false"
+                        
+                        (button :class "todo-check yellow"
+                                :onclick "/home/rashad/.config/eww/structure/scripts/isChecked 4" "${checkbox4}"
+                        )
+                        (input  :class "cyan todo"
+                                :value "${line4}"
+                                :onchange "sed -i '7s/.*/{}/' /home/rashad/.config/eww/structure/scripts/todo"
+                                :timeout "5s"
+                        )
+                )
+
+                (box    :orientation "h"
+                        :halign "start"
+                        :space-evenly "false"
+                        
+                        (button :class "todo-check yellow"
+                                :onclick "/home/rashad/.config/eww/structure/scripts/isChecked 5" "${checkbox5}"
+                        )
+                        (input  :class "cyan todo"
+                                :value "${line5}"
+                                :onchange "sed -i '9s/.*/{}/' /home/rashad/.config/eww/structure/scripts/todo"
+                                :timeout "5s"
+                        )
+                )
+        )
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;       CONTROL WIDGET         ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget controlWidget []
+        (box    :orientation "v"
+                :space-evenly "true"
+                :halign "center"
+                :valign "center"
+                :spacing "35"
+
+                (box    :orientation "h"
+                        :space-evenly "true"
+                        :halign "center"
+                        :valign "center"
+                        :spacing "35"
+                
+                        (button :onclick "/home/rashad/.bin/volumControl toggle"
+                                (image  :path "${audio}"
+                                :width "105"
+                                :height "105")    
+                        )
+
+                        (button :onclick "/home/rashad/.bin/toggleDunst"
+                                (image  :path "${notifications}"
+                                :width "105"
+                                :height "105")
+                        )
+                        (button :onclick "/home/rashad/.bin/toggleDunst"
+                                (image  :path "${sliders-icon}"
+                                :width "105"
+                                :height "105")
+                        )
+                )
+
+                (box    :orientation "h"
+                        :space-evenly "true"
+                        :halign "center"
+                        :valign "center"
+                        :spacing "35"
+                
+
+                        (button :onclick "systemsettings5&"
+                                (image  :path "${settings-icon}"
+                                        :width "105"
+                                        :height "105"
+                                )
+                        )
+                        (button :onclick "/home/rashad/.bin/micNotify"
+                                (image  :path "${mic}"
+                                        :width "105"
+                                        :height "105"
+                                )    
+                        ) 
+
+                        (button :onclick "/home/rashad/.bin/toggleDunst"
+                                (image  :path "${printer-icon}"
+                                :width "105"
+                                :height "105")
+                        )      
+                )
+
+                
+        )
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;       SCREENSHOT WIDGET      ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defwidget screenshotWidget []
+        
+        (box    :class "screenshot" 
+                :orientation "h"
+                (button :class "purple"
+                        :onclick "spectacle" "")
+                (button :class "blue"
+                        :onclick "spectacle -f -d 1500 -b &" "")
+                (button :class "green"
+                        :onclick "spectacle -r -b &" "")
+                (button :class "cyan"
+                        :onclick "spectacle -u -d 1500 -b &" "")  
+        )
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;        SYSTEM WIDGET         ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ 
+(defwidget systemWidget []
+        
+        (box    :orientation "v"
+                :class "system"
+                :space-evenly false
+                :spacing 40;
+                :valign "center"
+                :halign "center"
+                (box    :orientation "h"
+                        :class "metric-ram"
+                        :space-evenly false
+                        
+                        (label  :text "" 
+                                :class "metric-lable cyan")
+                        (scale  :min 0
+                                :max 101
+                                :active "false"
+                                :value "${ram}")
+                )
+                
+
+                (box    :orientation "h"
+                        :class "metric-vol"
+                        :space-evenly false
+                        (label  :text ""
+                                :class "metric-lable purple")
+                        (scale  :min 0
+                                :max 101
+                                :value "${vol}"
+                                :onchange "amixer -D pulse sset Master {}%")
+                )
+
+                (box    :orientation "h"
+                        :class "metric-bright"
+                        :space-evenly false
+
+                        (label  :text ""
+                                :class "metric-lable yellow")
+                        (scale  :min 0
+                                :max 101
+                                :value "101"
+                                ;:onchange "timeout 15s /home/rashad/.bin/setBright {}"
+                                )
+                )
+
+                (box    :orientation "h"
+                        :class "metric-root"
+                        :space-evenly false
+                        (label  :text ""
+                                :class "metric-lable green")
+                        (scale  :min 0
+                                :max 101
+                                :active "false"
+                                :value {round((1 - (EWW_DISK["/"].free / EWW_DISK["/"].total)) * 100, 0)})
+                )
+
+                (box     :orientation "h"
+                        :class "metric-disk"
+                        :space-evenly false
+                        (label  :text ""
+                                :class "metric-lable blue")
+                        (scale  :min 0
+                                :max 101
+                                :active "false"
+                                :value {round((1 - (EWW_DISK["/ArchDisk"].free / EWW_DISK["/ArchDisk"].total)) * 100, 0)})
+                )
+        )
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;         FETCH WIDGET         ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget fetchWidget []
+        (box    :orientation "v"
+                :class "fetch"
+                :valign "center"
+                :halign "center"
+                :space-evenly "false"
+                :spacing "30"
+
+         
+                (label  :text "user@RaShaD"
+                        :class "blue")
+                
+
+                (box    :orientation "h"
+                        :space-evenly "false"
+                        :spacing "25";
+
+                        (box    :orientation "v"
+                                :spacing "5";
+                                (label  :class "pink" 
+                                        :halign "start"
+                                        :text " os")
+                                (label :class "green" 
+                                        :halign "start"
+                                        :text " de")
+                                (label  :class "yellow" 
+                                        :halign "start"
+                                        :text "缾 wm")
+                                (label  :class "blue" 
+                                        :halign "start"
+                                        :text " sh")
+                                (label  :class "purple" 
+                                        :halign "start"
+                                        :text " up")
+                                (label  :class "cyan" 
+                                        :halign "start"
+                                        :text " pkg")
+                        )
+
+                        (box    :orientation "v"
+                                (label  :class "pink" 
+                                        :halign "start"
+                                        :text ":  ${distro}")
+                                (label :class "green" 
+                                        :halign "start"
+                                        :text ":  ${de}")
+                                (label  :class "yellow" 
+                                        :halign "start"
+                                        :text ":  ${wm}")
+                                (label  :class "blue" 
+                                        :halign "start"
+                                        :text ":  ${shell}")
+                                (label  :class "purple" 
+                                        :halign "start"
+                                        :text ":  ${uptime}")
+                                (label  :class "cyan" 
+                                        :halign "start"
+                                        :text ":  ${packages}")
+                        )
+                )
+
+                (box    :orientation "h"
+                        :class "dots"
+
+                        (label  :text "▲"
+                                :class "pink")
+                        (label  :text "▼"
+                                :class "green")
+                        (label  :text "▲"
+                                :class "yellow")
+                        (label  :text "▼"
+                                :class "blue")
+                        (label  :text "▲"
+                                :class "purple")
+                        (label  :text "▼"
+                                :class "cyan")
+                )
+        )
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;         PLAYER WIDGET        ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget playerWidgets []
+        (box    :orientation "v"
+                :space-evenly false
+                :halign "center"
+                (image  :class "cover"
+                        :path "${imgCover}"
+                        :width "300"
+                        :height "300")
+
+                (box    :orientation "v"
+                        :space-evenly false
+                        :halign "center"
+                        :spacing "10"
+
+                        (label  :class "artist purple"
+                                :text {artist != "" ? "${artist}" : "Artist"})
+
+                        (label  :class "song blue"
+                                :text {song != "" ? "${song}" : "Not playing"}) 
+                        
+                        
+                        (box    :class "control pink"
+                                :orientation "h"
+                                :space-evenly true
+                                (button :onclick "mpc perv" "ﭣ")
+                                (button :onclick "mpc toggle" "${playpause}")
+                                (button :onclick "mpc next" "ﭡ")
+                        )
+
+                        (box    :orientation "h"
+                                :class "metric-player"
+        
+                                (scale  :min 0
+                                        :max 101
+                                        :active "false"
+                                        :value {songtime != "" ? "${songtime}" : "0"}
+                                )       
+                        )    
+                )  
+        )
+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;       LOCATIONS WIDGET       ;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(defwidget homeWidget []
+        (button :class "locations cyan" 
+                :onclick "dolphin /home/rashad&"
+                (image  :path "${home}"
+                        :width "100"
+                        :height "100")
+        )
+)
+
+(defwidget diskWidget []
+        (button :onclick "dolphin /ArchDisk&"
+                (image  :path "${partition}"
+                        :width "100"
+                        :height "100")
+        )
+)
+
+(defwidget downloadsWidget  []
+        (button :onclick "dolphin /ArchDisk/downloads&"
+                (image  :path "${downloads}"
+                        :width "100"
+                        :height "100")
+        )
+)
+
+(defwidget configWidget []
+        (button :onclick "dolphin /home/rashad/.config&"
+                (image  :path "${config}"
+                        :width "100"
+                        :height "100")
+        )
+)
+
+(defwidget picturesWidget []
+        (button :onclick "dolphin /ArchDisk/pictures&"
+                (image  :path "${pictures}"
+                        :width "100"
+                        :height "100")
+                )
+)
+
+(defwidget documentsWidget []
+        (button :onclick "dolphin /ArchDisk/Documents&"
+                (image  :path "${documents}"
+                        :width "100"
+                        :height "100")
+        )
+)
+
+(defwidget favoritesWidget []
+        (button :onclick "dolphin /ArchDisk/Favorites&"
+                (image  :path "${favorites}"
+                        :width "100"
+                        :height "100")
+        )
+)

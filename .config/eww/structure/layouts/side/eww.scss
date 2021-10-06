@@ -1,0 +1,195 @@
+/*************************************************/
+/*************        COLORS         *************/
+/*************************************************/
+$white:       #EDEFF1;
+$gray:        #cdcfd1;
+$pink:        #C98093;
+$green:       #7CA198;
+$yellow:      #DDB278;
+$blue:        #6080B0;
+$purple:      #8E6F98;
+$cyan:        #6ca8cf;
+
+
+/*************************************************/
+/*************        ROOT CLASS     *************/
+/*************************************************/
+*{
+  all: unset;
+  background-color: $white;
+  font-family: 'FantasqueSansMono Nerd Font Mono';
+}
+
+/*************************************************/
+/*************      COLOR CLASSES    *************/
+/*************************************************/
+.pink{
+  color: $pink;
+}
+
+.green{
+  color: $green;
+}
+
+.yellow{
+  color: $yellow;
+}
+
+.blue{
+  color: $blue;
+}
+
+.purple{
+  color: $purple;
+}
+
+.cyan{
+  color: $cyan;
+}
+
+/*************************************************/
+/*************      USER WEDGIT      *************/
+/*************************************************/
+
+.user{
+  font-size: 28px;
+}
+
+/*************************************************/
+/*************      POWER WEDGIT      ************/
+/*************************************************/
+
+.power{
+  font-size: 75px;
+  padding: 15px;
+}
+
+/*************************************************/
+/*************   DATE/TIME WEDGIT   **************/
+/*************************************************/
+
+.date{
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.day{
+  font-size: 23px;
+  font-weight: 200;
+}
+
+.separator{
+  font-size: 60px;
+}
+
+/*************************************************/
+/*************      SCREENSHOT WEDGIT      ************/
+/*************************************************/
+
+.screenshot{
+  font-size: 75px;
+  padding: 15px;
+}
+
+/*************************************************/
+/*************      SYSTEM WEDGIT     ************/
+/*************************************************/
+
+.metric-ram scale trough highlight , .metric-vol scale trough highlight , .metric-root scale trough highlight , .metric-disk scale trough highlight, .metric-bright scale trough highlight {
+  all: unset;
+  border-radius: 10px;
+}
+
+.metric-ram scale trough , .metric-vol scale trough , .metric-root scale trough , .metric-disk scale trough, .metric-bright scale trough {
+  all: unset;
+  background-color: $gray;
+  border-radius: 50px;
+  min-height: 18px;
+  min-width: 280px;
+  margin-left: 20px;
+}
+
+.metric-ram scale trough highlight {
+  background-color: $cyan;
+}
+
+.metric-vol scale trough highlight {
+  background-color: $purple;
+}
+
+.metric-bright scale trough highlight {
+  background-color: $yellow;
+}
+
+.metric-root scale trough highlight {
+  background-color: $green;
+}
+
+.metric-disk scale trough highlight {
+  background-color: $pink;
+}
+
+.metric-lable {
+  font-family: "Feather";
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+
+/*************************************************/
+/*************      FETCH WEDGIT     *************/
+/*************************************************/
+
+.fetch{
+  font-size: 28px;
+}
+
+
+.dots{
+  font-size: 25px;
+}
+
+/*************************************************/
+/*************      PLAYER WEDGIT    *************/
+/*************************************************/
+
+.song{
+  font-size: 25px;
+}
+
+.artist{
+  font-size: 23px;
+}
+
+.control{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.metric-player  scale trough highlight {
+  all: unset;
+  border-radius: 10px;
+  background-color: $pink;
+  
+}
+
+.metric-player scale trough  {
+  all: unset;
+  background-color: $gray;
+  border-radius: 50px;
+  min-height: 12px;
+  
+}
+
+.metric-player scale trough  {
+  min-width: 215px;
+  
+}
+
+/*************************************************/
+/*************    LOCATIONS WEDGIT   *************/
+/*************************************************/
+
+.locations{
+  font-size: 80px;
+}

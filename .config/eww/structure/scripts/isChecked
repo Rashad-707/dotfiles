@@ -1,0 +1,19 @@
+#/usr/bin/env sh
+
+isChecked ()
+{
+    checkbox=$1
+    line=$(($1 * 2))
+    
+    checked="$(head -$line /home/rashad/.config/eww/structure/scripts/todo|tail -1)"
+    if [[  $checked == "0" ]]; then
+        sed -i ''$line's/.*/1/' /home/rashad/.config/eww/structure/scripts/todo
+        /home/rashad/eww/target/release/eww update checkbox$1=""
+
+    else
+        sed -i ''$line's/.*/0/' /home/rashad/.config/eww/structure/scripts/todo
+        /home/rashad/eww/target/release/eww update checkbox$1="ﱤ"
+    fi
+}
+
+isChecked $1
