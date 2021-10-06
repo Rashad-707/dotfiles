@@ -1,0 +1,72 @@
+* 
+{
+    background-color:        #EDEFF1;
+    border-color:            #EDEFF1;
+    text-color:              #496794;
+    font:                    "FantasqueSansMono Nerd Font 16";
+}
+
+window 
+{
+	location:	             northwest;
+	x-offset:                20px;
+    y-offset:                80px;
+	height:		             620px;
+	width:		             530px;
+	orientation:             horizontal;
+    padding:                 10px;
+}
+
+inputbar 
+{
+    border:                   0 0 1px 0;
+    children:                 [prompt,entry];
+}
+
+prompt
+{
+    padding:                  8px 16px 16px 16px ;
+    border:                   0 1px 0 0;
+    text-color:               #ba5c75;
+    font:                     "FantasqueSansMono Nerd Font 20";
+}
+
+entry
+{
+    padding:                  16px;
+    text-color:               #8e6f98;
+    font:                    "FantasqueSansMono Nerd Font 16";
+
+}
+
+listview 
+{
+    cycle:                    false;
+    margin:                   0 0 1px 0;
+    scrollbar:                false;
+}
+
+element 
+{
+    border:                   0 0 1px 0;
+    padding:                  16px;
+}
+
+element selected
+{
+    text-color:               #EDEFF1;
+    background-color:         #d7b38b;
+}
+
+element-text
+{
+    background-color:         inherit;
+    text-color:               inherit;
+}
+
+element-icon
+{
+    size:                     25px ;
+    margin:                   0 12px 0 0;
+	background-color:         inherit;
+}

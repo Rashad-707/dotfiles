@@ -1,0 +1,35 @@
+super + d
+  dolphin
+
+super + r 
+  $HOME/.bin/rofi-drun
+
+super + m
+  $HOME/.bin/rofi-music
+
+super + f
+  $HOME/.bin/rofi-file
+
+super + Return 
+  alacritty
+
+super + v
+  vivaldi-stable
+
+super + t
+  kotatogram-desktop
+
+XF86AudioRaiseVolume
+  $HOME/.bin/volumControl 2%+
+
+XF86AudioLowerVolume
+  $HOME/.bin/volumControl 2%-
+
+XF86AudioMute
+  $HOME/.bin/volumControl toggle
+
+super + Print
+  $HOME/.bin/rofi-screenshot
+
+super + F12 
+  $HOME/.bin/rofi-screenshot

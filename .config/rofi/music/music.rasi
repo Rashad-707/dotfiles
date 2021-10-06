@@ -1,0 +1,66 @@
+*
+{
+  background-color:           #EDEFF1;
+  text-color:                 #496794;
+  font:                       "FantasqueSansMono Nerd Font 17";
+}
+
+window
+{
+  width:                      400px;
+  height:                     525px;
+	location:	             northwest;
+	x-offset:                20px;
+    y-offset:                80px;
+  padding:                    10px;
+
+  children:                   [inputbar, listview ];
+}
+
+inputbar 
+{
+  border:                   0 0 1px 0;
+  children:                 [prompt,entry];
+}
+
+prompt
+{
+  padding:                  8px 16px 8px 16px ;
+  border:                   0 1px 0 0;
+  text-color:               #ba5c75;
+  font:                     "FantasqueSansMono Nerd Font 15";
+}
+
+entry
+{
+  padding:                  8px;
+  text-color:               #8e6f98;
+  font:                    "FantasqueSansMono Nerd Font 15";
+}
+
+listview
+{
+  layout:                   vertical;
+}
+
+element
+{
+  padding:                  16px;
+}
+
+element-text
+{
+  background-color:         inherit;
+  text-color:               inherit;
+}
+
+element.selected
+{
+  background-color:         #D7B38B;
+  text-color:               #EDEFF1;
+}
+
+element-icon
+{
+	background-color:         inherit;
+}

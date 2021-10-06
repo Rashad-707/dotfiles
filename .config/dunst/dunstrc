@@ -1,0 +1,131 @@
+[global]
+
+#--------------------------
+#           Display
+#--------------------------
+
+    monitor =                       0
+    follow =                        mouse
+    geometry =                      "400x5-20+90"
+    indicate_hidden =               yes
+    shrink =                        no
+    transparency =                  0
+    notification_height =           0
+    padding =                       25
+    horizontal_padding =            25
+    frame_width =                   0
+    frame_color =                   "#EDEFF1"
+    separator_height =              2
+    separator_color =               #916a9d
+    sort = yes
+    idle_threshold =                120
+
+#--------------------------
+#           Text
+#--------------------------
+
+    font =                          JetBrains Mono 9
+    line_height =                   17
+    markup =                        full
+    # format = "<b>%s</b>\n%b"
+    format =                        "<span font_desc='Monaco 11' weight='bold' foreground='#916a9d'>%s</span>\n%b"
+    alignment = center
+    vertical_alignment =            center
+    show_age_threshold =            60
+    word_wrap = yes
+
+    ignore_newline =                no
+    stack_duplicates =              true
+    hide_duplicate_count =          false
+    show_indicators =               no
+
+#--------------------------
+#           Icons
+#--------------------------
+    icon_position =                 left
+    min_icon_size =                 48
+    max_icon_size =                 96
+
+    # Zafiro
+     icon_path =                    /home/rashad/.local/share/icons/Zafiro-Icons/actions/22/:/home/rashad/.local/share/icons/Zafiro-Icons/actions/48/:/home/rashad/.local/share/icons/Zafiro-Icons/apps/scalable/:/home/rashad/.local/share/icons/Zafiro-Icons/categories/22/:/home/rashad/.local/share/icons/Zafiro-Icons/devices/48/:/home/rashad/.local/share/icons/Zafiro-Icons/emblems/16/:/home/rashad/.local/share/icons/Zafiro-Icons/emotes/:/home/rashad/.local/share/icons/Zafiro-Icons/mimetypes/48/:/home/rashad/.local/share/icons/Zafiro-Icons/panel/22-light/:/home/rashad/.local/share/icons/Zafiro-Icons/places/48-blue/:/home/rashad/.local/share/icons/Zafiro-Icons/status/22/
+
+#--------------------------
+#           History
+#--------------------------
+
+    sticky_history =                yes
+    history_length =                20
+    
+#--------------------------
+#       Misc/Advanced 
+#--------------------------
+    dmenu =                         /usr/bin/dmenu -p dunst:
+    browser =                       google-chorme
+    always_run_script =             true
+    title =                         Dunst
+    class =                         Dunst
+
+    startup_notification =          false
+
+    verbosity =                     mesg
+
+    # Picom manage this
+    corner_radius =                 0
+
+    ignore_dbusclose =              false
+
+    ### Legacy
+
+    force_xinerama =                false
+
+    ### mouse
+    mouse_left_click =              close_current
+    mouse_right_click =             do_action, close_current
+    mouse_middle_click =            close_all
+
+#--------------------------
+#    Additional sections 
+#-------------------------- 
+
+    [experimental]
+        per_monitor_dpi =           false
+
+    [shortcuts]
+        close =                     ctrl+space
+        close_all =                 ctrl+shift+space
+        context =                   ctrl+shift+period
+
+    [urgency_low]
+        background =                "#EDEFF1"
+        foreground =                "#1D344F"
+        highlight =                 "#87A5BF"
+        timeout =                   8
+
+    [urgency_normal]
+        background =                "#EDEFF1"
+        foreground =                "#1D344F"
+        highlight =                 "#87A5BF"
+        timeout =                   8
+
+    [urgency_critical]
+        background =                "#EDEFF1"
+        foreground =                "#1D344F"
+        highlight =                 "#87A5BF"
+        timeout =                   8
+
+    [Spectacle]
+        appname =                   Spectacle
+        format =                    "<span font_desc='Monaco 11' weight='bold' foreground='#916a9d'>%s</span>"
+
+    [mpd]
+        appname =                   mpd
+        format =                    " "
+
+        [mpc]
+        appname =                   mpc
+        format =                    " "
+
+        [ncmpcpp]
+        appname =                   ncmpcpp
+        format =                    " "
+# vim: ft=cfg

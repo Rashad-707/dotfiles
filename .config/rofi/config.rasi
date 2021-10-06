@@ -1,0 +1,21 @@
+//----------------------
+// Configuration
+//----------------------
+
+configuration {
+	modi: 			"drun,run,filebrowser";
+	font: 			"Monaco 10";
+	theme:			"~/.config/rofi/themes/rhombus.rasi";
+	show-icons: 		true;   
+	icon-theme:	 	"Zafiro-Icons";	
+	display-drun: 		"";
+	display-run: 		"";
+
+
+	 filebrowser {
+      directory: "/ArchDisk";
+      sorting-method: "name";
+      directories-first: true;
+   }
+
+	}
