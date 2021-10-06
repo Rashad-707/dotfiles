@@ -1,9 +1,0 @@
-#/usr/bin/env sh
-
-silent="$(amixer get Capture | grep 'Front Left: Capture' | sed 's/.*%] //' | cut -d "]" -f1 | awk 'sub(/^.{1}/,"")')"
-if [[ $silent == "off" ]]; then
-echo "/home/rashad/.config/eww/structure/icons/mic-off.png"
-
-else
-echo "/home/rashad/.config/eww/structure/icons/mic-on.png"
-fi
