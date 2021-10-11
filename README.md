@@ -13,7 +13,7 @@
 ⭐ **Music player** ➙ [MPD](https://www.musicpd.org) & [Ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)    
    
  Color scheme  
-<img src="https://github.com/Rashad-707/dotfiles/blob/main/img/colorscheme.png" width="100"">  
+<img src="https://github.com/Rashad-707/dotfiles/blob/main/img/colorscheme.png" width="100">  
 ![img](https://github.com/Rashad-707/dotfiles/blob/main/img/colorscheme.png  | width=100)  
 Widgets - center
 ![img2](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-1.png?raw=true)  
