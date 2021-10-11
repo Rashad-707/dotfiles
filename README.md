@@ -1,6 +1,6 @@
 ![img](https://github.com/Rashad-707/dotfiles/blob/main/img/dotfiles.png)
 ### Setup detailes  
-⭐ **Window Manager** ➙ DWM  
+⭐ **Window Manager** ➙ [DWM](https://dwm.suckless.org)  
 ⭐ **Terminal** ➙ [Alacritty](https://github.com/alacritty/alacritty)  
 ⭐ **Compositor** ➙ [Picom (ibhagwan fork)](https://github.com/ibhagwan/picom)  
 ⭐ **File manager** ➙ Dolphin  
@@ -9,7 +9,7 @@
 ⭐ **Widgets** ➙ [Eww](https://github.com/elkowar/eww)  
 ⭐ **Bar** ➙ [Polybar](https://github.com/polybar/polybar)  
 ⭐ **Menu** ➙ [Rofi](https://github.com/davatorium/rofi)  
-⭐ **Editor** ➙ Visual studio code  
+⭐ **Editor** ➙ [Visual studio code](https://code.visualstudio.com)  
 ⭐ **Music player** ➙ [MPD](https://www.musicpd.org) & [Ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)  
 
 Widgets - center
