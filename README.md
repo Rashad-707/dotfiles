@@ -10,9 +10,10 @@
 ⭐ **Bar** ➙ [Polybar](https://github.com/polybar/polybar)  
 ⭐ **Menu** ➙ [Rofi](https://github.com/davatorium/rofi)  
 ⭐ **Editor** ➙ [Visual studio code](https://code.visualstudio.com)  
-⭐ **Music player** ➙ [MPD](https://www.musicpd.org) & [Ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)  
-⭐ **Color scheme**  
-![img](https://github.com/Rashad-707/dotfiles/blob/main/img/colorscheme.png)
+⭐ **Music player** ➙ [MPD](https://www.musicpd.org) & [Ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)    
+   
+ Color scheme  
+![img](https://github.com/Rashad-707/dotfiles/blob/main/img/colorscheme.png  | width=100)
 Widgets - center
 ![img2](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-1.png?raw=true)  
 
