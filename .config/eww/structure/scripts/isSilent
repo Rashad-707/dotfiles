@@ -1,0 +1,9 @@
+#/usr/bin/env sh
+
+silent="$(dunstctl is-paused)"
+if [[ $silent == "true" ]]; then
+echo "/home/rashad/.config/eww/structure/icons/bell-off.png"
+
+else
+echo "/home/rashad/.config/eww/structure/icons/bell-on.png"
+fi

@@ -1,0 +1,11 @@
+#/usr/bin/env sh
+
+volume="$(amixer -D pulse get Master | grep '%' | head -n 1 | cut -d '[' -f 2 | cut -d '%' -f 1)"
+mute="$( amixer -D pulse get Master | tail -1 | awk '{print $6}' | sed 's/[^a-z]*//g')"
+
+if [[ $volume == 0 || "$mute" == "off" ]]; then
+echo "/home/rashad/.config/eww/structure/icons/audio-off.png"
+
+else
+echo "/home/rashad/.config/eww/structure/icons/audio-on.png"
+fi
