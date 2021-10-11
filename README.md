@@ -2,15 +2,15 @@
 ### Setup detailes  
 ▪ **Window Manager** ➙ DWM  
 ▪ **Terminal** ➙ Alacritty  
-▪ **Compositor** ➙ Picom  
+▪ **Compositor** ➙ [Picom (ibhagwan fork)](https://github.com/ibhagwan/picom)
 ▪ **File manager** ➙ Dolphin  
 ▪ **Browser** ➙ Vivaldi  
-▪ **Notification daemon** ➙ Dunst  
-▪ **Widgets** ➙ Eww  
-▪ **Bar** ➙ Polybar  
-▪ **Menu** ➙ Rofi  
+▪ **Notification daemon** ➙ [Dunst](https://github.com/dunst-project/dunst)  
+▪ **Widgets** ➙ [Eww](https://github.com/elkowar/eww)  
+▪ **Bar** ➙ [Polybar](https://github.com/polybar/polybar)  
+▪ **Menu** ➙ [Rofi](https://github.com/davatorium/rofi)  
 ▪ **Editor** ➙ Visual studio code  
-▪ **Music player** ➙ Ncmpcpp  
+▪ **Music player** ➙ [MPD](https://www.musicpd.org) & [Ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)  
 
 Eww widgets - center
 ![img2](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-1.png?raw=true)  
