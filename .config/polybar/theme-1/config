@@ -1,0 +1,73 @@
+include-file = $HOME/.config/polybar/colors.ini
+include-file = $HOME/.config/polybar/modules.ini
+
+;---------------------------------------
+;		THE CONSTANTS OF MAIN BARS          
+;---------------------------------------
+
+[constants/main]
+    include-file = $HOME/.config/polybar/fonts.ini
+    override-redirect = true
+    height = 45
+    offset-y = 20
+    radius = 23
+    fixed-center = true
+
+;---------------------------------------
+;		THE CONSTANTS OF BACKGROUND BARS
+;---------------------------------------
+
+[constants/background]
+    include-file = $HOME/.config/polybar/fonts.ini
+    override-redirect = true
+    height = 60
+    offset-y = 12.5
+    radius = 28 
+    fixed-center = true
+
+;---------------------------------------
+;		RIGHT BARS
+;---------------------------------------
+
+[bar/bar-right]
+    inherit = constants/main
+    background = ${colors.color4}
+    width = 500
+    offset-x = 3315
+    modules-right = pulseaudio date time searchmenu round-right-yellow
+
+[bar/bar-right-background]
+    inherit = constants/background
+    background = ${colors.color1}
+    width = 515
+    offset-x = 3307
+    modules-center = white
+
+;---------------------------------------
+;		LEFT BARS          
+;---------------------------------------
+
+[bar/bar-left]
+    inherit = constants/main
+    background = ${colors.color1}
+    width = 249
+    offset-x = 24
+    modules-left = round-left-blue rofi music mpd round-right-pink 
+
+[bar/bar-left-background]
+    inherit = constants/background
+    background = ${colors.color1}
+    width = 264
+    offset-x = 16
+    modules-center = white 
+
+;---------------------------------------
+;		CENTAR BARS          
+;---------------------------------------
+
+[bar/bar-center-background]
+    inherit = constants/background
+    background = ${colors.color1}
+    width = 8%
+    offset-x = 46%
+    modules-center = dwm 
