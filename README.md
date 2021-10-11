@@ -12,13 +12,13 @@
 ⭐ **Editor** ➙ Visual studio code  
 ⭐ **Music player** ➙ [MPD](https://www.musicpd.org) & [Ncmpcpp](https://github.com/ncmpcpp/ncmpcpp)  
 
-Eww widgets - center
+Widgets - center
 ![img2](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-1.png?raw=true)  
 
-Eww widgets - side
+Widgets - side
 ![img3](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-2.png?raw=true)  
 
-ncmpcpp - cava - dolphin
+[ncmpcpp-ueberzug](https://github.com/tam-carre/ncmpcpp-ueberzug) - [cava](https://github.com/karlstav/cava) - dolphin
 ![img4](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-3.png?raw=true)  
 
 rofi
