@@ -12,8 +12,17 @@
 ▪ **Editor** ➙ Visual studio code  
 ▪ **Music player** ➙ Ncmpcpp  
 
-![img2](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-1.png?raw=true)
-![img3](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-2.png?raw=true)
-![img4](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-3.png?raw=true)
-![img5](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-4.png?raw=true)
+Eww widgets - center
+![img2](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-1.png?raw=true)  
+
+Eww widgets - side
+![img3](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-2.png?raw=true)  
+
+ncmpcpp - cava - dolphin
+![img4](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-3.png?raw=true)  
+
+rofi
+![img5](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-4.png?raw=true)  
+
+vivaldi - visual studio code
 ![img6](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-5.png?raw=true)
