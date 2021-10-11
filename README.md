@@ -1,10 +1,10 @@
 ![img](https://github.com/Rashad-707/dotfiles/blob/main/img/dotfiles.png)
 ### Setup detailes  
 ▪ **Window Manager** ➙ DWM  
-▪ **Terminal** ➙ Alacritty  
+▪ **Terminal** ➙ [Alacritty](https://github.com/alacritty/alacritty)  
 ▪ **Compositor** ➙ [Picom (ibhagwan fork)](https://github.com/ibhagwan/picom)
 ▪ **File manager** ➙ Dolphin  
-▪ **Browser** ➙ Vivaldi  
+▪ **Browser** ➙ [vivaldi](https://vivaldi.com)  
 ▪ **Notification daemon** ➙ [Dunst](https://github.com/dunst-project/dunst)  
 ▪ **Widgets** ➙ [Eww](https://github.com/elkowar/eww)  
 ▪ **Bar** ➙ [Polybar](https://github.com/polybar/polybar)  
