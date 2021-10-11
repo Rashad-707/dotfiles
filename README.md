@@ -27,8 +27,7 @@ rofi
 vivaldi - visual studio code
 ![img6](https://github.com/Rashad-707/dotfiles/blob/main/img/screenshot-5.png?raw=true)  
 Startpage: [fluidity](https://github.com/PrettyCoffee/fluidity)  
-\
-\
+<br/><br/>
 <p align="center">
 <img src="https://github.com/Rashad-707/dotfiles/blob/main/img/colorscheme-1.png" width="700">   
 <img src="https://github.com/Rashad-707/dotfiles/blob/main/img/colorscheme-2.png" width="700"> 
