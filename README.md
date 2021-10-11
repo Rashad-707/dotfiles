@@ -2,7 +2,7 @@
 ### Setup detailes  
 ⭐ **Window Manager** ➙ DWM  
 ⭐ **Terminal** ➙ [Alacritty](https://github.com/alacritty/alacritty)  
-⭐ **Compositor** ➙ [Picom (ibhagwan fork)](https://github.com/ibhagwan/picom)
+⭐ **Compositor** ➙ [Picom (ibhagwan fork)](https://github.com/ibhagwan/picom)  
 ⭐ **File manager** ➙ Dolphin  
 ⭐ **Browser** ➙ [vivaldi](https://vivaldi.com)  
 ⭐ **Notification daemon** ➙ [Dunst](https://github.com/dunst-project/dunst)  
