@@ -1,4 +1,6 @@
+<p align="center">
 <img src="https://github.com/Rashad-707/dotfiles/blob/main/img/dotfiles.png" width="700">
+</p>  
 ### Setup detailes  
 ⭐ **Window Manager** ➙ [DWM](https://dwm.suckless.org)  
 ⭐ **Terminal** ➙ [Alacritty](https://github.com/alacritty/alacritty)  
