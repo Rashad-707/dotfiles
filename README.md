@@ -4,6 +4,7 @@
 
 ### Setup detailes  
 ⭐ **Window Manager** ➙ [DWM](https://dwm.suckless.org)  
+⭐ **DE** ➙ [Plasma KDE](https://kde.org/plasma-desktop/)  
 ⭐ **Terminal** ➙ [Alacritty](https://github.com/alacritty/alacritty)  
 ⭐ **Compositor** ➙ [Picom (ibhagwan fork)](https://github.com/ibhagwan/picom)  
 ⭐ **File manager** ➙ Dolphin  
