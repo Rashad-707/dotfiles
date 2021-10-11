@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+bright=$(printf '%.0f' $1)
+
+ddcutil --trace i2c --tid setvcp 10 $bright | cat > ~/log2.txt
+
+#ddcutil setvcp 10 $bright --display 1

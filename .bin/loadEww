@@ -1,0 +1,24 @@
+#/usr/bin/env sh
+/home/rashad/eww/target/release/eww open-many user power date control screenshot system player calendar todo fetch home disk downloads config pictures documents favorites 
+
+/home/rashad/eww/target/release/eww update de="$(echo $XDG_CURRENT_DESKTOP)"
+/home/rashad/eww/target/release/eww update wm="$(wmctrl -m | grep "Name:" | awk '{print $2}')"
+/home/rashad/eww/target/release/eww update shell="$(echo $SHELL | awk -F'/' '{print $NF}')"
+
+/home/rashad/eww/target/release/eww update line1="$(head -1 /home/rashad/.config/eww/structure/scripts/todo|tail -1)"
+/home/rashad/eww/target/release/eww update line2="$(head -3 /home/rashad/.config/eww/structure/scripts/todo|tail -1)"
+/home/rashad/eww/target/release/eww update line3="$(head -5 /home/rashad/.config/eww/structure/scripts/todo|tail -1)"
+/home/rashad/eww/target/release/eww update line4="$(head -7 /home/rashad/.config/eww/structure/scripts/todo|tail -1)"
+/home/rashad/eww/target/release/eww update line5="$(head -9 /home/rashad/.config/eww/structure/scripts/todo|tail -1)"
+
+for i in {1..5}
+do
+    line=$(($i * 2))
+    checked="$(head -$line /home/rashad/.config/eww/structure/scripts/todo|tail -1)"
+    if [[  $checked == "1" ]]; then
+        /home/rashad/eww/target/release/eww update checkbox$i=""
+
+    else
+        /home/rashad/eww/target/release/eww update checkbox$i="ﱤ"
+    fi
+done

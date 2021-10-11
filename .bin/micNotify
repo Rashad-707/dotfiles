@@ -1,0 +1,3 @@
+#!/bin/bash
+
+amixer set Capture toggle && amixer get Capture | grep '\[off\]' && notify-send "Mic switched OFF" || notify-send "Mic switched ON"

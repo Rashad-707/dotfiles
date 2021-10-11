@@ -1,0 +1,28 @@
+#!/usr/bin/env sh
+# Bind this scrept with a keyboard shourtcut (eg. in i3 config file)
+
+screen=""
+area=""
+window=""
+
+chosen=$(printf '%s;%s;%s\n' "$screen" "$area" "$window" \
+    | rofi -theme 'screenshot/screenshot.rasi' \
+           -dmenu \
+           -sep ';' \
+           -selected-row 1)
+
+case "$chosen" in
+    "$screen")
+        spectacle -f -d 1500 -b
+    ;;
+
+    "$area")
+        spectacle -r -d 1500 -b
+    ;;
+
+    "$window")
+        spectacle -u -d 1500 -b
+    ;;
+
+    *) exit 1 ;;
+esac

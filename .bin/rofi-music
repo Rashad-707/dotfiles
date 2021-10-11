@@ -1,0 +1,19 @@
+#!/usr/bin/env sh
+
+# Change this to your music directory
+MUSIC_DIR="/ArchDisk/Music"
+
+MUSIC_ARRAY=($MUSIC_DIR/*.mp3)
+chosen=$( for FILE in "${MUSIC_ARRAY[@]}"; do printf '%s;' "`basename "${FILE%%.*}"`"; done\
+        | rofi -theme 'music/music.rasi' \
+        -dmenu \
+        -i \
+        -p "Find a song ~" \
+        -sep ';' \
+        -selected-row 0)
+
+if [ "$?" -eq "1" ]; then
+    exit 0
+fi
+
+mpc clear && mpc add "${chosen}.mp3" && mpc play
