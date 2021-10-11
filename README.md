@@ -1,6 +1,6 @@
 ![img](https://github.com/Rashad-707/dotfiles/blob/main/img/dotfiles.png)
 ### Setup detailes  
-▪ **Window Manager** ➙ DWM  
+⭐ **Window Manager** ➙ DWM  
 ▪ **Terminal** ➙ [Alacritty](https://github.com/alacritty/alacritty)  
 ▪ **Compositor** ➙ [Picom (ibhagwan fork)](https://github.com/ibhagwan/picom)
 ▪ **File manager** ➙ Dolphin  
