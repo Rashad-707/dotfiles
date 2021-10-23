@@ -8,7 +8,7 @@
                                 :height "290px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
         :reserve (struts :distance "600px" :side "left")
 (userWidget))
 
@@ -21,7 +21,7 @@
                                 :height "290px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (powerWidget))
 
 
@@ -33,7 +33,7 @@
                                 :height "215px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (dateWidget))
 
 (defwindow control
@@ -44,7 +44,7 @@
                                 :height "290px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (controlWidget))
 
 (defwindow screenshot
@@ -55,7 +55,7 @@
                                 :height "290px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (screenshotWidget))
 
 (defwindow system
@@ -66,7 +66,7 @@
                                 :height "360px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (systemWidget))
 
 
@@ -78,7 +78,7 @@
                                 :height "335px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (fetchWidget))
  
 (defwindow player
@@ -89,7 +89,7 @@
                                 :height "430px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (playerWidgets))
 
 (defwindow home
@@ -100,7 +100,7 @@
                                 :height "100px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (homeWidget))
 
 (defwindow disk
@@ -111,7 +111,7 @@
                                 :height "100px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (diskWidget))
 
 (defwindow downloads
@@ -122,7 +122,7 @@
                                 :height "100px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (downloadsWidget))
 
 (defwindow pictures
@@ -133,5 +133,5 @@
                                 :height "100px"
                                 :anchor "top left")
         :windowtype "dock"
-        :wm-ignore false
+        :wm-ignore true
 (picturesWidget))
